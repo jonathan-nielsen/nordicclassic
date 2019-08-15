@@ -1,0 +1,29 @@
+{
+  "name": "nordicclassic",
+  "version": "0.0.1",
+  "description": "Website of Nordic Classic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-nielsen/nordicclassic.git"
+  },
+  "author": "Jonathan Nielsen <jonathan.nielsen93@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathan-nielsen/nordicclassic/issues"
+  },
+  "homepage": "https://github.com/jonathan-nielsen/nordicclassic#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
