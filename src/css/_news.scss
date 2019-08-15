@@ -1,0 +1,23 @@
+.news {
+	.title {
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.update {
+		margin-top: 20px;
+
+		time {
+			color: $text-color-secondary;
+			margin-bottom: 4px;
+			display: block;
+			font-size: 14px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
