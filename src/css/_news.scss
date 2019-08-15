@@ -4,6 +4,11 @@
 		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
+		margin-bottom: 40px;
+
+		@media only screen and (min-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	.update {
