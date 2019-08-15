@@ -1,10 +1,25 @@
+.supporting {
+	font-size: 15px;
+
+	@media only screen and (min-width: 768px) {
+		font-size: 28px;
+	}
+}
+
+.horde-alliance img {
+	@media only screen and (max-width: 991px) {
+		width: 100%;
+		max-width: 92px;
+	}
+}
+
 .guild {
 	margin-top: 20px;
 
 	.name {
 		font-size: 16px;
 
-		@media only screen and (min-width: 992px) {
+		@media only screen and (min-width: 768px) {
 			font-size: 24px;
 		}
 
@@ -17,7 +32,7 @@
 		color: $text-color-secondary;
 		font-size: 14px;
 
-		@media only screen and (min-width: 992px) {
+		@media only screen and (min-width: 768px) {
 			font-size: 16px;
 		}
 	}
@@ -25,7 +40,7 @@
 	.discord {
 		font-size: 14px;
 
-		@media only screen and (min-width: 992px) {
+		@media only screen and (min-width: 768px) {
 			font-size: 16px;
 		}
 

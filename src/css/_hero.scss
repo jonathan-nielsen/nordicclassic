@@ -20,7 +20,7 @@
 		z-index: 1;
     display: inline-block;
 
-		@media only screen and (min-width: 992px) {
+		@media only screen and (min-width: 768px) {
 			margin-left: 48px;
 			margin-top: 32px;
 		}
@@ -36,7 +36,7 @@
     display: inline-block;
 		font-size: 18px;
 
-		@media only screen and (min-width: 992px) {
+		@media only screen and (min-width: 768px) {
 			margin-right: 48px;
 			margin-top: 32px;
 			font-size: 24px;

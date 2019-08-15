@@ -18,7 +18,14 @@
 		right: 0;
 	}
 
-	@media only screen and (min-width: 992px) {
+	&.md-right:after {
+		@media only screen and (min-width: 768px) {
+			left: initial;
+			right: 0;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
 		font-size: 40px;
 	}
 }
