@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'fonts';
+@import 'hero';
+@import 'title';
 
-html {
+html, body {
 	background-color: $bg-color;
+	font-family: $font;
+	color: $text-color;
 }

@@ -1,0 +1,15 @@
+.title {
+	font-size: 32px;
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: #fff;
+		width: 48px;
+		height: 2px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}

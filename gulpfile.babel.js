@@ -21,12 +21,6 @@ function js() {
 };
 
 async function css() {
-	try {
-		await fs.copy('src/css/bootstrap/', 'dist/css/bootstrap/');
-	} catch (err) {
-		return console.error(err)
-	}
-
 	return gulp.src('src/css/**/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
@@ -44,7 +38,24 @@ async function html() {
 	}
 }
 
-exports.default = gulp.parallel(js, css, html);
+async function copyStatics() {
+	try {
+		await fs.copy('src/css/bootstrap/', 'dist/css/bootstrap/');
+		await fs.copy('src/font/', 'dist/font/');
+		await fs.copy('src/img/', 'dist/img/');
+	} catch (err) {
+		return console.error(err)
+	}
+}
+
 exports.html = html;
 exports.js = js;
 exports.css = css;
+exports.watch = async function() {
+	await copyStatics();
+
+	gulp.watch('src/js/**/*', js);
+	gulp.watch('src/css/**/*', css);
+	gulp.watch('src/html/**/*', html);
+}
+exports.default = gulp.parallel(js, css, html, copyStatics);
