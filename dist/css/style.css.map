@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","_variables.scss"],"names":[],"mappings":"AAGA,KACC,iBCJU","file":"style.css","sourcesContent":["@import 'variables';\n@import 'fonts';\n\nhtml {\n\tbackground-color: $bg-color;\n}","$bg-color: #000;"]}
