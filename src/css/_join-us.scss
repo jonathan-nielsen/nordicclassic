@@ -1,0 +1,27 @@
+.join-us {
+	height: 320px;
+	background-image: url('../img/mountain.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+	.title {
+		display: inline-block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@media only screen and (min-width: 992px) {
+		height: 500px;
+	}
+
+	p {
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 160px;
+	}
+}

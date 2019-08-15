@@ -1,0 +1,5 @@
+html, body {
+	background-color: #000 !important;
+	opacity: 0;
+	transition: opacity .5s ease-out 0.5s;
+}

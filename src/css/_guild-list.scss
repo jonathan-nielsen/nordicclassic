@@ -1,0 +1,47 @@
+.guild {
+	margin-top: 20px;
+
+	.name {
+		font-size: 16px;
+
+		@media only screen and (min-width: 992px) {
+			font-size: 24px;
+		}
+
+		&.gray {
+			color: #aaa;
+		}
+	}
+
+	.nation {
+		color: $text-color-secondary;
+		font-size: 14px;
+
+		@media only screen and (min-width: 992px) {
+			font-size: 16px;
+		}
+	}
+
+	.discord {
+		font-size: 14px;
+
+		@media only screen and (min-width: 992px) {
+			font-size: 16px;
+		}
+
+		a,
+		a:visited {
+			color: #4188d4;
+		}
+
+		a:active,
+		a:hover {
+			color: #3272b7;
+			text-decoration: underline;
+		}
+	}
+	
+	&:first-child {
+		margin-top: 0;
+	}
+}

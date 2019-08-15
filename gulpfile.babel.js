@@ -1,6 +1,5 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import babel from 'gulp-babel';
 import cleanCSS from 'gulp-clean-css';
 import concat from 'gulp-concat';
 import fs from 'fs-extra';
@@ -10,15 +9,6 @@ import sourcemaps from 'gulp-sourcemaps';
 import sass from 'gulp-sass';
 
 sass.compiler = require('node-sass');
-
-function js() {
-	return gulp.src('src/js/**/*.js')
-		.pipe(sourcemaps.init())
-		.pipe(babel())
-		.pipe(concat('script.js'))
-		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('dist'));
-};
 
 async function css() {
 	return gulp.src('src/css/**/*.scss')
@@ -41,6 +31,7 @@ async function html() {
 async function copyStatics() {
 	try {
 		await fs.copy('src/css/bootstrap/', 'dist/css/bootstrap/');
+		await fs.copy('src/css/viewport.css', 'dist/css/viewport.css');
 		await fs.copy('src/font/', 'dist/font/');
 		await fs.copy('src/img/', 'dist/img/');
 	} catch (err) {
@@ -49,13 +40,11 @@ async function copyStatics() {
 }
 
 exports.html = html;
-exports.js = js;
 exports.css = css;
 exports.watch = async function() {
 	await copyStatics();
 
-	gulp.watch('src/js/**/*', js);
 	gulp.watch('src/css/**/*', css);
 	gulp.watch('src/html/**/*', html);
 }
-exports.default = gulp.parallel(js, css, html, copyStatics);
+exports.default = gulp.parallel(css, html, copyStatics);
