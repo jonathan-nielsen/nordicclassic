@@ -25,42 +25,4 @@
 			margin-top: 32px;
 		}
 	}
-
-	.initiative {
-		position: absolute;
-		text-align: right;
-		right: 0;
-		margin-right: 24px;
-		margin-top: 16px;
-		z-index: 1;
-    display: inline-block;
-		font-size: 18px;
-
-		@media only screen and (min-width: 768px) {
-			margin-right: 48px;
-			margin-top: 32px;
-			font-size: 24px;
-		}
-
-		&:after {
-			display: none;
-		}
-	}
-
-	.realm {
-		bottom: 20%;
-		left: 50%;
-		transform: translateX(-50%);
-		text-align: center;
-		position: absolute;
-		font-family: LifeCraft;
-		z-index: 1;
-		font-size: 84px;
-
-		.sub {
-			font-size: 32px;
-			position: relative;
-			margin-top: -10px;
-		}
-	}
 }
