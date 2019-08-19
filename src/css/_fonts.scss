@@ -1,13 +1,63 @@
 @charset 'UTF-8';
 @font-face {
-	font-family: 'Copperplate';
+	font-family: 'SemplicitaPro';
 	font-weight: normal;
-	src: url('../font/CopperplateRegular.ttf');
-	src: url('../font/CopperplateRegular.svg');
-	src: url('../font/CopperplateRegular.eot');
-	src: url('../font/CopperplateRegular.eot?#iefix') format('embedded-opentype'),
-		url('../font/CopperplateRegular.woff') format('woff'),
-		url('../font/CopperplateRegular.woff2') format('woff2');
+	src: url('../font/SemplicitaPro.ttf');
+	src: url('../font/SemplicitaPro.svg');
+	src: url('../font/SemplicitaPro.eot');
+	src: url('../font/SemplicitaPro.eot?#iefix') format('embedded-opentype'),
+		url('../font/SemplicitaPro.woff') format('woff'),
+		url('../font/SemplicitaPro.woff2') format('woff2');
+}
+
+@charset 'UTF-8';
+@font-face {
+	font-family: 'SemplicitaPro';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../font/SemplicitaPro-Italic.ttf');
+	src: url('../font/SemplicitaPro-Italic.svg');
+	src: url('../font/SemplicitaPro-Italic.eot');
+	src: url('../font/SemplicitaPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../font/SemplicitaPro-Italic.woff') format('woff'),
+		url('../font/SemplicitaPro-Italic.woff2') format('woff2');
+}
+
+@charset 'UTF-8';
+@font-face {
+	font-family: 'SemplicitaPro';
+	font-weight: 700;
+	src: url('../font/SemplicitaPro-Medium.ttf');
+	src: url('../font/SemplicitaPro-Medium.svg');
+	src: url('../font/SemplicitaPro-Medium.eot');
+	src: url('../font/SemplicitaPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../font/SemplicitaPro-Medium.woff') format('woff'),
+		url('../font/SemplicitaPro-Medium.woff2') format('woff2');
+}
+
+@charset 'UTF-8';
+@font-face {
+	font-family: 'SemplicitaPro';
+	font-weight: 700;
+	font-style: italic;
+	src: url('../font/SemplicitaPro-MedIt.ttf');
+	src: url('../font/SemplicitaPro-MedIt.svg');
+	src: url('../font/SemplicitaPro-MedIt.eot');
+	src: url('../font/SemplicitaPro-MedIt.eot?#iefix') format('embedded-opentype'),
+		url('../font/SemplicitaPro-MedIt.woff') format('woff'),
+		url('../font/SemplicitaPro-MedIt.woff2') format('woff2');
+}
+
+@charset 'UTF-8';
+@font-face {
+	font-family: 'SemplicitaPro';
+	font-weight: bold;
+	src: url('../font/SemplicitaPro-Bold.ttf');
+	src: url('../font/SemplicitaPro-Bold.svg');
+	src: url('../font/SemplicitaPro-Bold.eot');
+	src: url('../font/SemplicitaPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/SemplicitaPro-Bold.woff') format('woff'),
+		url('../font/SemplicitaPro-Bold.woff2') format('woff2');
 }
 
 @font-face {

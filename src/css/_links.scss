@@ -1,0 +1,9 @@
+.links {
+	li {
+		margin-top: 8px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}

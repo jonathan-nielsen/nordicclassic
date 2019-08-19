@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'hero';
 @import 'news';
+@import 'links';
 @import 'title';
 @import 'guild-list';
 @import 'join-us';
@@ -10,7 +11,7 @@
 html, body {
 	font-family: $font;
 	color: $text-color;
-	line-height: 1;
+	line-height: 1.2;
 	opacity: 1;
 }
 
